@@ -2,7 +2,7 @@
 """
 Created on Thu Feb  9 10:31:05 2023
 
-@author: parit
+@author: parita
 """
 
 import screen as s
@@ -15,10 +15,16 @@ class Game(s.Screen):
         mixer.music.load(r"Music/bgMusic.wav")
         mixer.music.play(-1)
         while running:
-            s.screen.fill(0,0,0)
+            s.Screen.scrn.fill((255,255,0))
             
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
+            
+            
+            pygame.draw.line(s.Screen.scrn, ((255,255,255)), [349, 0], [349, 500], 5)
+            
             pygame.display.flip()
-            pygame.display.update()
+            s.Screen.clock.tick(60)
+            #pygame.display.update()
+        pygame.quit()
