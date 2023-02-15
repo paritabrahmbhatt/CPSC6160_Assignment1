@@ -8,7 +8,7 @@ Created on Thu Feb  9 10:31:05 2023
 import screen as s
 import pygame
 from pygame import mixer
-
+import draw
 class Game(s.Screen):
     def run(self):
         running = True
@@ -24,7 +24,9 @@ class Game(s.Screen):
             
             pygame.draw.line(s.Screen.scrn, ((255,255,255)), [349, 0], [349, 500], 5)
             
+            #s.Screen.scrn.blit()
+            draw.Draw.draw(self)
             pygame.display.flip()
             s.Screen.clock.tick(60)
-            #pygame.display.update()
+
         pygame.quit()
