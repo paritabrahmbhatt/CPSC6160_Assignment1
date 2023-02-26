@@ -16,11 +16,13 @@ import draw as d
 class Game(s.Screen):
     def run(self):
         running = True
+        game_over = False
         mixer.music.load(r"Music/bgMusic.wav")
         mixer.music.play(-1)
 
         player1 = 0
         player2 = 0
+
 
         all_sprites = pygame.sprite.Group()
         all_sprites.add(d.Draw.p1)
@@ -48,9 +50,15 @@ class Game(s.Screen):
 
             if d.Draw.ball.rect.x >= 690:
                 player1 += 1
+                if(player1 == 5):
+                    game_over = True
+
                 d.Draw.ball.vel[0] = -d.Draw.ball.vel[0]
             if d.Draw.ball.rect.x <= 0:
                 player2 += 1
+                if(player2 == 5):
+                    game_over = True
+
                 d.Draw.ball.vel[0] = -d.Draw.ball.vel[0]
             if d.Draw.ball.rect.y > 490:
                 d.Draw.ball.vel[1] = -d.Draw.ball.vel[1]
@@ -68,12 +76,37 @@ class Game(s.Screen):
             #s.Screen.scrn.blit()
             # d.Draw.draw(self)
 
-            font = pygame.font.Font(None, 74)
-            text = font.render(str(player1), 1, (0,0,0))
-            s.Screen.scrn.blit(text, (250, 10))
-            text = font.render(str(player2), 1, (0,0,0))
-            s.Screen.scrn.blit(text, (420, 10))
+            if(game_over == False):
+                font = pygame.font.Font(None, 74)
+                text = font.render(str(player1), 1, (0, 0, 0))
+                s.Screen.scrn.blit(text, (250, 10))
+                text = font.render(str(player2), 1, (0, 0, 0))
+                s.Screen.scrn.blit(text, (420, 10))
 
+            else:
+                font = pygame.font.Font(None, 74)
+                text = font.render(str(player1), 1, (0, 0, 0))
+                s.Screen.scrn.blit(text, (250, 10))
+                text = font.render(str(player2), 1, (0, 0, 0))
+                s.Screen.scrn.blit(text, (420, 10))
+
+                if(player1==5):
+                    font = pygame.font.Font(None, 74)
+                    text = font.render("Player 1 wins", True, (0, 0, 0))
+                    text_rect = text.get_rect(center=(700 / 2, 500/ 2))
+                    s.Screen.scrn.blit(text, text_rect)
+                    pygame.display.update()
+                    pygame.time.delay(2000)
+                else:
+                    font = pygame.font.Font(None, 74)
+                    text = font.render("Player 2 wins", True, (0, 0, 0))
+                    text_rect = text.get_rect(center=(700 / 2, 500 / 2))
+                    s.Screen.scrn.blit(text, text_rect)
+                    pygame.display.update()
+                    pygame.time.delay(2000)
+
+
+                running=False
 
             pygame.display.flip()
             s.Screen.clock.tick(60)
