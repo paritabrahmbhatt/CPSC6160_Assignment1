@@ -6,10 +6,24 @@
 1. Parita Brahmbhatt
 2. Rintu Noelmon
 
+## OSVersion: 13.2.1
+## PythonVersion: 3.8.10
+## PygameVersion: 2.1.2
+  
+
 ### Introduction
+Pong's design requires only basic graphics and sound, which can make it a fun and challenging project to tackle. It is relatively simple compared to modern video games, and it serves as a great starting point to craete a game from scratch.
 
-The inspiration for us to build this game was because as a child we used to play a pong game and always wonder what really makes the ball move back and forth and how the paddle moves with just a key press. Game development is highly creative process, we feel creating a new game needs a lots of basic understanding, so we want to be strong enough to build a game on our own. So we took this game as a basic challenge for moving forward for the real one.
 
-In the game we introduced music behind the scene so that it helps players to enjoy and play with calmness with soothing music.The reason behind this stucture is we want the game to be classy and simple.
+### Reasoning behind the structure
+The design choices for a Pong game are typically driven by a desire to create a fun and engaging experience that is easy to learn but challenging to master. The game's simple mechanics and basic physics engine make it accessible to players of all skill levels, while the fast-paced gameplay and competitive elements keep players engaged.
+
+
+### Future Works,
+You can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
+Artificial Intelligence is becoming increasingly important in games, and improving the game engine's AI capabilities can greatly enhance the player experience. You can add new AI behaviors, improve pathfinding algorithms, and add support for machine learning.
+
+
+
 
 
