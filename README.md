@@ -51,3 +51,4 @@ The images below shoes the welcome screen, game, and the winner respectively.
 3. It is a 5 points game. The player who scores 5 points first wins. 
 4. If the ball hits the wall behind the paddle, the opponent gets the point.
 
+#### Hope you will enjoy playing our game!!!
