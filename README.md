@@ -32,6 +32,6 @@ The design choices for a Pong game are typically driven by a desire to create a 
 ![image](https://user-images.githubusercontent.com/67082863/222316264-e98b09a4-c888-424f-ac34-6ea44864d6a8.png)
 
 
-![image](https://user-images.githubusercontent.com/67082863/222316618-a11185ec-5ad3-4dde-a27e-2522e4242ced.png)
+![image](https://user-images.githubusercontent.com/67082863/222316799-fa838ee1-83a3-4103-abe7-5e4240e99958.png)
 
 
