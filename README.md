@@ -45,5 +45,9 @@ The images below shoes the welcome screen, game, and the winner respectively.
 
 ![image](https://user-images.githubusercontent.com/67082863/222317907-b991ec93-48ec-4951-a799-7fcf1daa630d.png)
 
-
+### Game Rules
+1. Press anywhere on the welcome screen to start the game.
+2. The game has two paddles one is controlled by Up and Down keys and the other is control by 'S' and 'W' Keys on the keyboard.
+3. It is a 5 points game. The player who scores 5 points first wins. 
+4. If the ball hits the wall behind the paddle, the opponent gets the point.
 
