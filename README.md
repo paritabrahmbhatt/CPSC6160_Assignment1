@@ -6,7 +6,7 @@
 1. Parita Brahmbhatt
 2. Rintu Noelmon
 
-![alt text](https://github.com/paritabrahmbhatt/CPSC6160_Assignment1/edit/main/images.jpeg?raw=true)
+![alt text](https://github.com/paritabrahmbhatt/CPSC6160_Assignment1/main/Images/images.jpeg?raw=true)
 
 ## OSVersion: 13.2.1
 ## PythonVersion: 3.8.10
@@ -24,6 +24,9 @@ The design choices for a Pong game are typically driven by a desire to create a 
 ### Future Works,
 1.You can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
 2.Artificial Intelligence is becoming increasingly important in games, and improving the game engine's AI capabilities can greatly enhance the player experience. 
+
+### Generalization
+While Pong is a two-player game, you could create a version of the game that allows for more players. For example, you could create a four-player game where each player has their own paddle and they have to work together to keep the ball in play.
 
 
 
