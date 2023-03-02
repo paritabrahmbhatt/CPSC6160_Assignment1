@@ -6,7 +6,7 @@
 1. Parita Brahmbhatt
 2. Rintu Noelmon
 
-![My Image](Images/images.jpg)
+![My Image](../Images/images.jpeg)
 
 ## OSVersion: 13.2.1
 ## PythonVersion: 3.8.10
