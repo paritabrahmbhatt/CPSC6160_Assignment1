@@ -19,6 +19,8 @@ Pong's design requires only basic graphics and sound, which can make it a fun an
 ### Reasoning behind the structure
 The design choices for a Pong game are typically driven by a desire to create a fun and engaging experience that is easy to learn but challenging to master. The game's simple mechanics and basic physics engine make it accessible to players of all skill levels, while the fast-paced gameplay and competitive elements keep players engaged.
 
+![Blank diagram](https://user-images.githubusercontent.com/124462732/222328375-7c19a23c-fd86-40f8-ac72-e7560135b9a7.png)
+
 ### Future Works
 We included various functionalities to our game. This version of game provided different features such as music, welcome screen, score board, etc. However, many functionaltiies and features could be added to the game, which are as follows.
 1. We can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
