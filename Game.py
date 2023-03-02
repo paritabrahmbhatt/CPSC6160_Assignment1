@@ -155,7 +155,7 @@ class Game(s.Screen):
                     text_rect = text.get_rect(center=(700 / 2, 500 / 2))
                     s.Screen.scrn.blit(text, text_rect)
                     pygame.display.update()
-                    pygame.time.delay(20000)
+                    pygame.time.delay(2000)
 
                 running=False
 
