@@ -1,16 +1,16 @@
-import paddle
 import screen as s
 import pygame
 from pygame import mixer
 import draw as d
-
+import welcome as w
 
 
 
 class Game(s.Screen):
     def run(self):
-        running = True
+        running = False
         game_over = False
+        e_wlcm = False
         mixer.music.load(r"Music/bgMusic.wav")
         mixer.music.play(-1)
 
@@ -22,10 +22,33 @@ class Game(s.Screen):
         all_sprites.add(d.Draw.p1)
         all_sprites.add(d.Draw.p2)
         all_sprites.add(d.Draw.ball)
+        
+        #Welcome Screen 
+        button_img = pygame.image.load(r"Images/button.png")
+        button = w.Button(350,250,button_img,"Press Anywhere",38,38)
+        
+        while e_wlcm==False:
+            
+            w.Welcome_Screen.wlcm_scrn.fill((106, 159, 181))
+            button.draw_btn()
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    e_wlcm = True
+                    pygame.quit()
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    btn_start = button.checkIp(pygame.mouse.get_pos())
+                    if btn_start == True:
+                        e_wlcm = True
+                        running = True
+                        break
+                        #pygame.display.flip()
+            pygame.display.flip()
+            s.Screen.clock.tick(60)
 
+        #Main Screen
         while running:
-            s.Screen.scrn.fill((255,255,0))
-            pygame.draw.line(s.Screen.scrn, ((255,0,0)), [349, 0], [349, 500], 5)
+            s.Screen.scrn.fill((106, 159, 181))
+            pygame.draw.line(s.Screen.scrn, ((255,255,255)), [349, 0], [349, 500], 5)
             #pygame.display.flip()
             
             #Drawing Paddles and ball on the screen.
@@ -50,7 +73,7 @@ class Game(s.Screen):
             if d.Draw.ball.rect.x >= 690:
                 player1 += 1
                 d.Draw.ball.vel[0] = -d.Draw.ball.vel[0]
-                if(player1 != 11):
+                if(player1 != 5):
                     d.Draw.ball.rect.x = 350
                     d.Draw.ball.rect.y = 250
                     d.Draw.p1.rect.x = 20
@@ -58,18 +81,18 @@ class Game(s.Screen):
                     d.Draw.p2.rect.x = 670
                     d.Draw.p2.rect.y = 200
                     
-                    #pygame.time.delay(1000)
+                    pygame.time.delay(900)
                     all_sprites.update()
                     #pygame.display.update()
                 else:
                     game_over = True
-                
+                pygame.display.update()
                 
                 
             elif d.Draw.ball.rect.x <= 0:
                 player2 += 1
                 d.Draw.ball.vel[0] = -d.Draw.ball.vel[0]
-                if(player2 != 11):
+                if(player2 != 5):
                     d.Draw.ball.rect.x = 350
                     d.Draw.ball.rect.y = 250
                     d.Draw.p1.rect.x = 20
@@ -78,7 +101,7 @@ class Game(s.Screen):
                     d.Draw.p2.rect.y = 200
                     
                     all_sprites.update()
-                    #pygame.time.delay(1000)
+                    pygame.time.delay(900)
                     #pygame.display.update()
                     
                 else:
@@ -103,7 +126,6 @@ class Game(s.Screen):
                 text = font.render(str(player2), 1, (0, 0, 0))
                 s.Screen.scrn.blit(text, (420, 10))
                 
-
             else:
                 font = pygame.font.Font(None, 74)
                 text = font.render(str(player1), 1, (0, 0, 0))
@@ -119,6 +141,7 @@ class Game(s.Screen):
                     s.Screen.scrn.blit(text, text_rect)
                     pygame.display.update()
                     pygame.time.delay(2000)
+                    
                 else:
                     font = pygame.font.Font(None, 74)
                     text = font.render("Player 2 wins", True, (0, 0, 0))
