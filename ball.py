@@ -2,7 +2,7 @@
 """
 Created on Wed Feb 22 14:35:50 2023
 
-@author: parit
+@author: parita and rintu
 """
 
 import pygame
