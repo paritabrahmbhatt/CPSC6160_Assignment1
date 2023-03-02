@@ -6,7 +6,7 @@
 1. Parita Brahmbhatt
 2. Rintu Noelmon
 
-![alt text](https://github.com/paritabrahmbhatt/CPSC6160_Assignment1/main/Images/images.jpeg?raw=true)
+![My Image](images/my-image.jpg)
 
 ## OSVersion: 13.2.1
 ## PythonVersion: 3.8.10
