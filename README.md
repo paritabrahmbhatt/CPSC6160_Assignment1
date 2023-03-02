@@ -21,11 +21,16 @@ The design choices for a Pong game are typically driven by a desire to create a 
 
 ### Future Works,
 1.You can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
+
 2.Artificial Intelligence is becoming increasingly important in games, and improving the game engine's AI capabilities can greatly enhance the player experience. 
 
 ### Generalization
 1.While Pong is a two-player game, you could create a version of the game that allows for more players. For example, you could create a four-player game where each player has their own paddle and they have to work together to keep the ball in play.
+
 2.The basic Pong game has a rectangular playing field, but you could change the shape of the field to create new challenges.
+
+![image](https://user-images.githubusercontent.com/67082863/222316264-e98b09a4-c888-424f-ac34-6ea44864d6a8.png)
+
 
 
 
