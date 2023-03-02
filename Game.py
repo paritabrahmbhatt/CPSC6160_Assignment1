@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Feb 13 15:30:47 2023
+
+@author: parita and rintu
+"""
+
 import screen as s
 import pygame
 from pygame import mixer
@@ -25,7 +32,7 @@ class Game(s.Screen):
         
         #Welcome Screen 
         button_img = pygame.image.load(r"Images/button.png")
-        button = w.Button(350,250,button_img,"Press Anywhere",38,38)
+        button = w.Button(350,250,button_img,"Press Anywhere to Start",38,38)
         
         while e_wlcm==False:
             
@@ -148,7 +155,7 @@ class Game(s.Screen):
                     text_rect = text.get_rect(center=(700 / 2, 500 / 2))
                     s.Screen.scrn.blit(text, text_rect)
                     pygame.display.update()
-                    pygame.time.delay(2000)
+                    pygame.time.delay(20000)
 
                 running=False
 

@@ -2,7 +2,7 @@
 """
 Created on Mon Feb 13 15:30:47 2023
 
-@author: parita
+@author: parita and rintu
 """
 
 import paddle

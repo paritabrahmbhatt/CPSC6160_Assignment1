@@ -2,7 +2,7 @@
 """
 Created on Thu Feb  9 10:19:03 2023
 
-@author: parita
+@author: parita and rintu
 """
 
 import pygame
@@ -26,4 +26,7 @@ class Screen():
     scrn = pygame.display.set_mode(size)
     
     clock = pygame.time.Clock()
+    
+    
+    
     

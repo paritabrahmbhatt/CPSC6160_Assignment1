@@ -2,7 +2,7 @@
 """
 Created on Wed Mar  1 09:45:48 2023
 
-@author: parita
+@author: parita and rintu
 """
 
 import screen as s
