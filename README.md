@@ -6,6 +6,8 @@
 1. Parita Brahmbhatt
 2. Rintu Noelmon
 
+![alt text](https://github.com/paritabrahmbhatt/CPSC6160_Assignment1/edit/main/images.jpeg?raw=true)
+
 ## OSVersion: 13.2.1
 ## PythonVersion: 3.8.10
 ## PygameVersion: 2.1.2
@@ -20,8 +22,8 @@ The design choices for a Pong game are typically driven by a desire to create a 
 
 
 ### Future Works,
-You can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
-Artificial Intelligence is becoming increasingly important in games, and improving the game engine's AI capabilities can greatly enhance the player experience. You can add new AI behaviors, improve pathfinding algorithms, and add support for machine learning.
+1.You can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
+2.Artificial Intelligence is becoming increasingly important in games, and improving the game engine's AI capabilities can greatly enhance the player experience. 
 
 
 
