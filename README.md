@@ -17,6 +17,8 @@ PygameVersion: 2.1.2
 ### Introduction
 Pong is a two player arcade game which was first introduced in 1972. The game Pong's design requires only basic graphics and sound, which can make it a fun and challenging project to tackle. It is relatively simple compared to modern video games, and it serves as a great starting point to craete a game from scratch.
 
+### Instructions
+Please download the complete repository adn run the `main.py` file in either Python text editor of your choice or a commandprompt. Please ensure that your have installed `pygame' library. 
 
 ### Reasoning behind the structure
 The design choices for a Pong game are typically driven by a desire to create a fun and engaging experience that is easy to learn but challenging to master. The game's simple mechanics and basic physics engine make it accessible to players of all skill levels, while the fast-paced gameplay and competitive elements keep players engaged.
