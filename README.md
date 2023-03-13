@@ -21,15 +21,10 @@ Pong is a two player arcade game which was first introduced in 1972. The game Po
 ### Reasoning behind the structure
 The design choices for a Pong game are typically driven by a desire to create a fun and engaging experience that is easy to learn but challenging to master. The game's simple mechanics and basic physics engine make it accessible to players of all skill levels, while the fast-paced gameplay and competitive elements keep players engaged.
 
-The following daigram shows the relationship between various classes of our games. 
+The following diagram shows the relationship between various classes of our game. 
 
 ![Blank diagram](https://user-images.githubusercontent.com/124462732/222328375-7c19a23c-fd86-40f8-ac72-e7560135b9a7.png)
 
-### Future Works
-We included various functionalities to our game. This version of game provided different features such as music, welcome screen, score board, etc. However, many functionaltiies and features could be added to the game, which are as follows.
-1. We can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
-2. As Artificial Intelligence has become popular in almost all fields, we can add the AI bot playing against the player. In such game engines.
-3. We can also provide the difficulty levels, and according to the difficulty level, the speed of the ball should be decided. 
 
 ### Generalization
 
@@ -50,5 +45,11 @@ The images below shoes the welcome screen, game, and the winner respectively.
 2. The game has two paddles one is controlled by Up and Down keys and the other is control by 'S' and 'W' Keys on the keyboard.
 3. It is a 5 points game. The player who scores 5 points first wins. 
 4. If the ball hits the wall behind the paddle, the opponent gets the point.
+
+### Future Works
+We included various functionalities to our game. This version of game provided different features such as music, welcome screen, score board, etc. However, many functionaltiies and features could be added to the game, which are as follows.
+1. We can optimize the game engine by profiling the code, identifying and fixing performance bottlenecks, and using efficient algorithms and data structures.
+2. As Artificial Intelligence has become popular in almost all fields, we can add the AI bot playing against the player. In such game engines.
+3. We can also provide the difficulty levels, and according to the difficulty level, the speed of the ball should be decided. 
 
 #### Hope you will enjoy playing our game!!!
